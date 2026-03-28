@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(92, 194, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloud {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    color: white; 
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    animation: flotter 4s ease-in-out infinite; /*Animation pour faire flotter les nuages*/
+    font-size: 130px;
+}
+
+.cloud1 {
+    position: absolute;
+    top: 60px;
+    right: 400px; 
+    color: rgb(224, 223, 223);
+}
+
+.cloud2 {
+    position: absolute;
+    top: 20px;
+    right: 120px;
+}
+
+.cloud3 {
+    position: absolute;
+    top: 140px;
+    left: 130px;
+}
+
+.soleil {
+    position: absolute;
+    top: 30px;
+    left: 1100px;
+    width: 100px;
+    height: 100px;
+    color: rgb(233, 233, 7);
+    border-radius: 50%;
+    font-size: 80px;
+}
+
+@keyframes flotter { /* Pour faire flotter les nuages */
+    
+    0% {
+        transform: translateY(0); 
+    }
+
+    50% {
+        transform: translateY(-20px); 
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
